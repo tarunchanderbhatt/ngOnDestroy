@@ -1,0 +1,20 @@
+<div class="container-fluid bg-warning pb-5">
+  <h1 class="display-3 bg-warning text-center pt-2 pb-2">
+    This is Parrent Component
+  </h1>
+
+  <h1 class="display-3 bg-warning text-center pt-2 pb-2">
+    ng After View Init
+  </h1>
+
+  <input type="text" class="form-control" />
+  <p class="text-center text-uppercase mt-4 bg-warning ">
+    {{ title }}
+  </p>
+</div>
+<div class="justify-content-center text-center pt-2 pb-2 bg-success">
+  <button (click)="showAndHide()" class="btn btn-danger ">
+    ng on Destroy
+  </button>
+</div>
+<app-view-child *ngIf="isShow"></app-view-child>
